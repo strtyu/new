@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+  <head>  
+    <link rel="stylesheet" type="text/css" href="css/mainPage.css">   
+    <meta charset="utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+   <script src="ajax.js"></script>
+    <title>Car Service</title>
+</head>
+ <body id="body" class="main">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img src="images/logo1.jpg" onclick="func()" alt="Logo" width="53" height="48">CarService</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="order.html">Order</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Services
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="Services.html">Rent</a></li>
+              <li><a class="dropdown-item" href="Maintenance.html">Maintenance</a></li>
+              <li><a class="dropdown-item" href="Parts.html">Parts</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#aboutUs">About us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="index.html#contacts">Contacts</a>
+          </li>
+          <li class="nav-item">
+            <a id="gameLastResult" class="nav-link" href="Game.html" title = "A">Game</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Cart.html">Cart</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+<!--   
+    <nav class="navbar navbar-expand sticky-top">
+        <div class="container-fluid menu">
+          <a class="navbar-brand" href="#"><img src="logo1.jpg" alt="Logo" width="53" height="48">CarService</a>
+           <div class="collapse navbar-collapse">
+             <div class="navbar-nav">
+              <a class="nav-link active" aria-current="page" href="order.html" style="opacity: 0.8;">Order</a>
+              <div class="dropdown">
+                <button class="btn btn-outline-primary dropdown-toggle " type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Services.html">Rent</a></li>
+                  <li><a class="dropdown-item" href="Maintenance.html">Maintenance</a></li>
+                  <li><a class="dropdown-item" href="Parts.html">Parts</a></li>
+                </ul>
+              </div>
+              <a class="nav-link active" aria-current="page" href="#aboutUs" style="opacity: 0.8;">About us</a>
+              <a class="nav-link active" aria-current="page" href="#contacts" style="opacity: 0.8;">Contacts</a>
+             </div>
+            </div>
+        </div>
+      </nav> -->
+      <div class="container-fluid mainCar">
+        <img src="images/carmain1.jpg" alt="Car" style="width:100%;">
+        <div class="mainInfo" id="mainInfo">
+            <div class="InformationForMain">
+                <div class="forMainMainInformation">
+                    <div class="text1">Drive with<br>confidence</div>
+                    <div class="Slogan">We provide cars,<br> maintenance, and parts of<br> the highest quality</div>
+                </div>
+                <div class="forButton buttonOrderAndService">
+                  <a href="order.html" class="btn btn-primary forOrderAndService Order">Order</a>
+                  <a href="order.html" class="btn btn-primary forOrderAndService">Service</a>
+                </div>
+            </div>
+          </div>
+      </div>
+          <div class="mainInfoAboutServices container" id="services">
+            <div class="row" style="display: flex; justify-content: space-around;"> 
+            <div class="col-10 col-md-4">
+            <div class="card"style="width: 98%;">
+              <img src="images/carrent.png" class="card-img-top" alt="...">
+                            <div class="card-body" id="cbR">
+                <h5 class="card-title"><b>Rental</b></h5>
+                <p class="card-text textForServiceDescription" id="ctR" style=" display: none;"> Our website provides an opportunity to book a rental following cars online:<br>
+                  <span class="list">Toyota Camry<br>Rolls Royce<br>Cadillac Elmiraj<br>...</span></p>
+                  <div class="forButton">
+                    <a href="html/Services.html" class="btn btn-primary forMore">More</a>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-10 col-md-4">
+            <div class="card" style="width: 98%;">
+              <img src="images/carM.png" class="card-img-top" alt="...">
+              <div class="card-body" id="cbM">
+                <h5 class="card-title"><b>Maintenance</b></h5>
+                <p class="card-text textForServiceDescription" id="ctM" style=" display: none;"> In our salon you can carry out a complete diagnosis of the car:<br>
+                  <span class="list">General diagnostics<br>Oil filter changing<br>Complete cleaning<br>...</span></p>
+                  <div class="forButton">
+                    <a href="html/Maintenance.html" class="btn btn-primary forMore">More</a>
+                  </div>
+              </div>
+            </div>
+            </div>
+            <div class="col-10 col-md-4">
+            <div class="card" style="width: 98%;">
+              <img src="images/parts.jpg" class="card-img-top" alt="...">
+              <div class="card-body" id="cbP">
+                <h5 class="card-title"><b>Spare parts</b></h5>
+                <p class="card-text textForServiceDescription" id="ctP" style=" display: none;"> You can also purchase individual car parts:<br>
+                  <span class="list">Engine<br>Power Train<br>Transmission<br>...</span></p>
+                  <div class="forButton">
+                    <a href="Parts.html" class="btn btn-primary forMore">More</a>
+                  </div>
+              </div>
+            </div>
+            </div>
+            </div>
+          </div>
+          <div class="forNews container-fluid" id="News">
+            <div class="row">
+            <div class="pictureForNews col-12 col-md-6">
+              <img class="pictureNews" src="images/news2.png" alt="pictureofnews"/>
+            </div>
+            <div class="forTextAboutNews col-12 col-md-6">
+              <div class="NewstextText">
+                <h1>NEWS</h1>
+                <h4><p>Our car service congratulates you on the upcoming holiday and provides a <b>20%</b> discount on online <b>car rental booking</b>.</p>The discount is valid until <span class="forItalic">April 25</span> inclusive<h4></h4>
+              </div>
+              <div class="forButton forOrderNow">
+                <button type="button" class="OrderNow"><a class="aService" href="order.html">Order right now</a></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <button class="btn btn-primary FrAQ" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+            <b>?</b>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasExampleLabel">Frequently asked questions</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              
+              <div>
+                <div class="accordion" id="accordionExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Where is our car service located?
+                      </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span>Turan 55E, there will be an inscription "CarService", this is our geolocation 51.114492,71.396619.</span> 
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                        How is the process of issuing a car?
+                      </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span>When you get a car, contact the number 87753306616 and provide payment. When she confirms the payment, you can tell the address, the car will be in half an hour with a full tank</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item">
+                    <h2 class="accordion-header">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                        How can I extend the lease?
+                      </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                      <div class="accordion-body">
+                        <span>To extend the lease, you can write to us via telegram or instagram or call (they are all listed on the website) tell me the number of the car and how many you will extend, you need to make the payment before the expiration of the original period</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="forTop AboutUs" id="aboutUs">About Us</div>
+          <div class="forInfo infoAboutUs">
+            <div class="container">
+              <div class="row">
+                <div class=" col-6 col-lg-3" style="margin-bottom: 25px;">
+                  <div class="teamMember"><b onmouseover="showAkma". onmouseout="showAkma()">Akmaral Karimuratova</b><br><p id="Akma"> Creating a site map, logical structure of the site, basic blocks about services, Production of the navigation panel </p></div>            
+                </div>
+                <div class=" col-6 col-lg-3" style="margin-bottom: 25px;">
+                  <div class="teamMember"><b onmouseover="showKana". onmouseout="showKana()">Erkanat Seitkhan</b><br><p id="Kana"> Collecting information, News block, header design, development of buttons and links, Main block of the mainPage</p></div>
+                </div>
+                <div class=" col-6 col-lg-3">
+                  <div class="teamMember"><b onmouseover="showAlyo". onmouseout="showAlyo()">Alyona Abaidulina</b><br><p id="Alyo"> Collecting information, Services page , adding bootstrap: Navigation bar, Carousel</p></div>
+                </div>
+                <div class=" col-6 col-lg-3">
+                  <div class="teamMember"><b onmouseover="showEra". onmouseout="showEra()">Ernar Iranuly</b><br><p id="Era"> Forms for order, Providing responsiveness of the website, Bootstrap Containers and Grid layout system </p></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div style="width: 100%; height: max-content; background-color: white;">
+            <div class="forTop Contacts" id="contacts">Contacts</div>
+            <div class="forInfo infoContacts">
+              <div class="container">
+              <div class="row">
+                <div class="col-12 col-md-2" style="display: flex; flex-direction: row;"><div class="forContactText">Contact us via:</div></div>
+                <div class="col-12 col-md-3" style="display: flex; flex-direction: row;"><div class="forContactPicture"><img class="contacts" src="images/contact1.png" alt="contact1"/></div>
+                <div class="forContactText"><a class="tele" href="https://t.me/carservice23" title="Go to our chat">@CarServiceChat</a></div></div>
+                <div class="col-12 col-md-3" style="display: flex; flex-direction: row;"><div class="forContactPicture"><img class="contacts" src="images/contact2.png" alt="contact2"/></div>
+                <div class="forContactText">someinstagram_m</div></div>
+                <div class="col-12 col-md-3" style="display: flex; flex-direction: row;"> <div class="forContactPicture"><img class="contacts" src="images/contact3.png" alt="contact3"/></div>
+                <div class="forContactText">+77753306616</div><br></div>
+              </div>
+              </div>
+            </div>
+          </div>
+          <p>
+            <a class="btn btn-primary help" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1"><img src="images/q.gif"/>
+              <span class="visually-hidden">New alerts</span>
+            </span></a>
+          </p>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse help" id="multiCollapseExample1">
+                <div class="card card-body cardMessage">
+                  <span class="message">We are always online<br>We will be happy to advise you<br></span>
+                  <div id="wNewMessage"></div>
+                  <div class="input-group">
+                    <input id="sMessage" class="form-control" aria-label="With textarea" placeholder="Ask your question here"></input>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script>
+            $(document).ready(function(){
+            $("#mainInfo").animate({left: '0%'});
+            });
+            $(document).ready(function(){
+             $("#cbR").mouseenter(function(){
+               $("#ctR").slideDown("slow");
+             });
+             $("#cbR").mouseleave(function(){
+               $("#ctR").slideUp("slow");
+             });
+            });
+
+            $(document).ready(function(){
+             $("#cbM").mouseenter(function(){
+               $("#ctM").slideDown("slow");
+             });
+             $("#cbM").mouseleave(function(){
+               $("#ctM").slideUp("slow");
+             });
+            });
+
+            $(document).ready(function(){
+             $("#cbP").mouseenter(function(){
+               $("#ctP").slideDown("slow");
+             });
+             $("#cbP").mouseleave(function(){
+               $("#ctP").slideUp("slow");
+             });
+            });
+          
+            var sMessage = document.getElementById("sMessage");
+            sMessage.addEventListener("keydown", function (e) {
+             if (e.code === "Enter") {  //checks whether the pressed key is "Enter"
+              wMessage(e);
+            }
+          });
+          function wMessage(e) {
+            var text = e.target.value;
+            let nDiv=document.querySelector('#wNewMessage');
+            var initialHtml=String(nDiv.innerHTML);
+            var text = String(e.target.value);
+            var nHtml=initialHtml+"<div id=\'sM\' style=\"width:content-fit; text-align: right; border-radius:6px; border:2px solid rgb(24,122,197); padding-left: 5px; padding-right:5px; margin-left:4px; margin-right:4px; margin-top: 12px; margin-bottom: 12px; background-color: white;\"><span>"+text+"</span></div><div id=\'wM\' style=\"border-radius:6px; border:2px solid rgb(24,122,197); padding-left: 5px; padding-right:5px; margin-left:4px; margin-right:4px; margin-top: 12px; margin-bottom: 12px; background-color: white;\"><span>Thank you for your question<br>Our meneger will contact you within a minute!</span></div>";
+            nDiv.innerHTML=nHtml;
+            e.target.value="";
+          }
+            let var1 =localStorage.getItem("WhoWin");
+            console.log(var1);
+            let gameLastResult=document.querySelector('#gameLastResult');
+            if(var1==null){
+              gameLastResult.title="Let's play!";
+            }
+            else{
+              gameLastResult.title=var1;
+            }
+            function func(){
+              localStorage.setItem("WhoWin", "Let's play!");
+            }
+          </script>
+     </body>
+</html>

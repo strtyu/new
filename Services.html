@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+    <head>   
+        <link rel="stylesheet" type="text/css" href="css/Services.css">   
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+       <title>Car Service</title>
+       <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          background-color: #474e5d;
+          font-family: Helvetica, sans-serif;
+        }
+        
+        /* The actual timeline (the vertical ruler) */
+        .timeline {
+          position: relative;
+          max-width: 1200px;
+          margin: 0 auto;
+        }
+        
+        /* The actual timeline (the vertical ruler) */
+        .timeline::after {
+          content: '';
+          position: absolute;
+          width: 6px;
+          background-color: white;
+          top: 0;
+          bottom: 0;
+          left: 50%;
+          margin-left: -3px;
+        }
+        
+        /* Container around content */
+        .container {
+          padding: 10px 40px;
+          position: relative;
+          background-color: inherit;
+          width: 50%;
+        }
+        
+        /* The circles on the timeline */
+        .container::after {
+          content: '';
+          position: absolute;
+          width: 25px;
+          height: 25px;
+          right: -17px;
+          background-color: white;
+          border: 4px solid rgb(241,199,65);
+          top: 15px;
+          border-radius: 50%;
+          z-index: 1;
+        }
+        
+        /* Place the container to the left */
+        .left {
+          left: -25.35%;
+        }
+        
+        /* Place the container to the right */
+        .right {
+          left: 25.35%;
+        }
+        
+        /* Add arrows to the left container (pointing right) */
+        .left::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          right: 30px;
+          border: medium solid white;
+          border-width: 10px 0 10px 10px;
+          border-color: transparent transparent transparent white;
+        }
+        
+        /* Add arrows to the right container (pointing left) */
+        .right::before {
+          content: " ";
+          height: 0;
+          position: absolute;
+          top: 22px;
+          width: 0;
+          z-index: 1;
+          left: 30px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+        }
+        
+        /* Fix the circle for containers on the right side */
+        .right::after {
+          left: -16px;
+        }
+        
+        /* The actual content */
+        .content {
+          padding: 20px 30px;
+          background-color: white;
+          position: relative;
+          border-radius: 6px;
+          box-shadow: 3px 3px 17px -10px white;
+        }
+        
+        /* Media queries - Responsive timeline on screens less than 600px wide */
+        @media screen and (max-width: 600px) {
+          /* Place the timelime to the left */
+          .timeline::after {
+          left: 31px;
+          }
+          
+          /* Full-width containers */
+          .container {
+          width: 100%;
+          padding-left: 70px;
+          padding-right: 25px;
+          }
+          
+          /* Make sure that all arrows are pointing leftwards */
+          .container::before {
+          left: 60px;
+          border: medium solid white;
+          border-width: 10px 10px 10px 0;
+          border-color: transparent white transparent transparent;
+          }
+        
+          /* Make sure all circles are at the same spot */
+          .left::after, .right::after {
+          left: 15px;
+          }
+          
+          /* Make all right containers behave like the left ones */
+          .right {
+          left: 0%;
+          }
+        }
+        </style>
+    </head>
+     <body class="main">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="images/logo1.jpg" alt="Logo" width="53" height="48">CarService</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="order.html">Order</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Services
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="Services.html">Rent</a></li>
+                  <li><a class="dropdown-item" href="Maintenance.html">Maintenance</a></li>
+                  <li><a class="dropdown-item" href="Parts.html">Parts</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#aboutUs">About us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html#contacts">Contacts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Game.html">Game</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Cart.html">Cart</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+          <div class="OptionMain">
+          <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="forPicandText">
+                <div class="carPic">
+                  <div class="fadein">
+                    <img src="images/car1.jpg">
+                    <img src="images/car12.jpg">
+                    <img src="images/car13.jpg">
+                    <img src="images/car14.jpg">
+                    <img src="images/car15.jpg">
+                    <img src="images/car16.jpg">
+                    <img src="images/car17.jpg">
+                    <img src="images/car18.jpg">
+                  </div>
+                </div>
+                <div class="forText1">
+                  <span class="name">TOYOTA RAV4</span><br>
+                  <span class="price">from 24000 tg per day
+                  </span>
+                  <br>
+                  <ul class="text">
+                    <li>Body: crossover</li>
+                    <li>Number of seats: 5</li>
+                    <li>Acceleration time to 100 km/h, <br>sec.: 11s</li>
+                    <li>Power, HP: 149</li>
+                  </ul>
+                  <div class="forOrderNow">
+                    <a href="order.html" class="btn btn-primary OrderNow">Order this car</a>
+                  </div>
+              </div>
+              </div>
+              </div>
+              <div class="carousel-item">
+                <div class="forPicandText">
+                  <div class="carPic">
+                    <div class="fadein">
+                      <img src="images/car2.jpg">
+                      <img src="images/car22.jpg">
+                      <img src="images/car23.jpg">
+                      <img src="images/car24.jpg">
+                      <img src="images/car25.jpg">
+                      <img src="images/car26.jpg">
+                      <img src="images/car27.jpg">
+                      <img src="images/car28.jpg">
+                    </div>
+                  </div>
+                  <div class="forText1">
+                    <span class="name">KIA RIO
+                      X-LINE</span><br>
+                      <span class="price">from 17600 tg per day
+                      </span>
+                      <br>
+                      <ul class="text">
+                        <li>Body: hatchback</li>
+                        <li>Number of seats: 5</li>
+                        <li>Acceleration time to 100 km/h, <br>sec.: 11.6 s</li>
+                        <li>Power, HP: 123</li>
+                      </ul>
+                      <div class="forOrderNow">
+                        <button type="button" class="btn btn-primary position-relative OrderNow"><a class="aService" href="order.html">Order this car</a>
+                          <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                            <a href="index.html#News" class="Discount">Discount</a>
+                          </span>
+                        </button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="forPicandText">
+                  <div class="carPic">
+                    <div class="fadein">
+                      <img src="images/car3.jpg">
+                      <img src="images/car32.jpg">
+                      <img src="images/car33.jpg">
+                      <img src="images/car34.jpg">
+                      <img src="images/car35.jpg">
+                      <img src="images/car36.jpg">
+                      <img src="images/car37.jpg">
+                      <img src="images/car38.jpg">
+                    </div>
+                    </div>
+                  <div class="forText1">
+                    <span class="name">HYUNDAI ACCENT</span><br>
+                      <span class="price">from 16000 tg per day
+                      </span>
+                      <br>
+                      <ul class="text">
+                        <li>Body: sedan</li>
+                        <li>Number of seats: 5</li>
+                        <li>Acceleration time to 100 km/h, <br>sec.: 11.2 s</li>
+                        <li>Power, HP: 123</li>
+                      </ul>
+                      <div class="forOrderNow">
+                        <button type="button" class="OrderNow"><a class="aService" href="order.html">Order this car</a></button>
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          </div>
+          <div style="width: 100%; height: fit-content; ">
+            <div class="row" style="display: flex; flex-direction: row; justify-content: center; background-color: white; padding: 1%; margin-top: 8%;">
+            <span class="name" style="font-size: 40px; color:rgb(0, 32, 50)!important; text-align: center;" >3 easy steps to rent a car</span><br>
+            </div>
+            <div class="timeline">
+              
+              <div class="container right">
+                <div class="content">
+                  <div class="row">
+                  <h2 class="col-1">1| </h2>
+                  <h2 class="col-11">Call for booking</h2>
+                  </div>
+                  <p>Choose a suitable car and book
+                    it for a certain time and date.
+                    The cost of booking is 5,000 tenge, this amount will be included in the cost of renting a car</p>
+                </div>
+              </div>
+              <div class="container left">
+                <div class="content">
+                  <div class="row">
+                  <h2 class="col-1">2| </h2>
+                  <h2 class="col-11">Car delivery to any point of the city</h2>
+                  </div>
+                  <p>The car is delivered to the address you specified or issued at the company's office</p>
+                </div>
+              </div>
+              <div class="container right">
+                <div class="content">
+                  <div class="row">
+                  <h2 class="col-1">3| </h2>
+                  <h2 class="col-11">Signing a lease agreement in 10 minutes</h2>
+                  </div>
+                  <p>All liability for unintentional damage is covered by insurance.<br>
+                    It is allowed to drive around the city and within a radius of up to 50 km. By prior agreement, you can travel to other cities of Kazakhstan.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+     </body>
+</html>

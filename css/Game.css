@@ -1,0 +1,62 @@
+body{font-family: Arial, Helvetica, sans-serif!important; background-color: rgb(0, 32, 50); display: flex; flex-direction: column; height: 15000;}
+.navbar{background-color: rgb(203, 93, 93); box-shadow: 0px 1px 8px -2px #999999;}
+.navbar-brand-mt-3{width: min-content; height: min-content; margin-right: 2%;}
+.navbar-brand-mt-3 img{opacity: 0.5;}
+.dropdown-toggle:defined{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.dropdown-toggle:hover{background-color: white!important; color: rgb(0, 32, 50)white!important;}
+.dropdown-toggle:focus{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.dropdown-toggle:active{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.btn-outline-primary{color: white(0, 32, 50)!important; border: none!important;}
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item.active{
+    background-color: white!important;
+    color: rgb(0, 32, 50)!important;
+  }
+.menu img{margin-left: 4%;}
+.forButton.buttonOrderAndService{width: 100%;  display: flex; flex-direction: row; margin-bottom: 7%;}
+body{font-family: Arial, Helvetica, sans-serif!important; }
+
+.text1{line-height: 120%; letter-spacing: 0.25rem; color: white; width: 100%;  margin-bottom: 1%; padding-left: 3%; padding-right: 3%; font-family: Arial, Helvetica, sans-serif; font-weight: 500!important;display: flex; flex-direction: column;  justify-content: end; font-size: 50px;} 
+.Slogan{width: 100%;  margin-bottom: 1%; font-size: 30px; font-family: Arial, Helvetica, sans-serif; font-weight: 400!important; color: white; padding-left: 4%;}
+.p2 {font-family: Arial, Helvetica, sans-serif;}
+.car1{width: 700px; height: 500px;}
+a.nav-link:hover{color: rgb(21, 43, 116)!important;}
+a.tele{text-decoration: none!important; color: white!important;}
+.titleLink{margin-right: 1%;}
+.container-fluid {
+    position: relative;
+    padding: 0%!important;
+}
+.mainForGame{
+    display: flex;
+    background-color:  rgb(0, 32, 50);
+    justify-self: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    padding: 0%!important;
+    min-height: 500px;
+}
+.row2{background-color: rgb(255,235,1); padding-top: 2%; height: 80%;}
+.mainForPlace{background-color: rgb(255,235,1); padding-top: 0%; height: 90%;}
+.left{background-color: rgb(255,235,1);height:100%; display: flex; flex-direction: row; justify-content: left; align-items: center;}
+.right{background-color: rgb(255,235,1);height:100%; display: flex; flex-direction: row; justify-content: right; align-items: center;}
+.mid{background-color:  rgb(255,235,1);height:100%; display: flex; flex-direction: row; justify-content: center; align-items: center;}
+.leftTitle,.rightTitle{background-color: rgb(255,235,1);display: flex; flex-direction: row; height: fit-content;}
+.left img{margin-left:30%; width: 240px; height:fit-content;}
+.right img{margin-right:30%;width: 240px; height:fit-content;}
+.mid img{width: 280px;}
+.row1{height: 10%; background-color: rgb(255,235,1)} 
+#youimg,#cpuimg{height: 90px;}
+#youimg{padding-left: 5%; padding-right: 0.85%;}
+#cpuimg{padding-right: 5%; padding-left: 3%;} 
+.rightTitle{justify-content: end;}
+.row4{justify-content: center;}
+.ResultImg{height: 100%;}
+.row3, .col-4{font-size: larger; font-weight: bolder;}
+.row3{color: rgb(21, 43, 116);}
+.col-4{color: rgb(21, 43, 116);}
+.bt{background-color: white; border-color: rgb(21, 43, 116);}
+.point1, .point2, .point3{display: flex; flex-direction: column; justify-content: center;}
+.row3{display: flex; flex-direction: row; justify-content: center; padding-bottom: 1%; height: fit-content; height: 40px;} 
+.myround{border-radius: 100%; width: 45px; height:45px; margin: 10px; border: 3px solid rgb(21, 43, 116); background-color: white;}

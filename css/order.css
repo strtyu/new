@@ -1,0 +1,74 @@
+body{ overflow: hidden; font-family: Arial, Helvetica, sans-serif!important; display: flex; flex-direction: column; height: 100vh;}
+.container-fluid {
+    padding: 0%!important;
+}
+.carOrder{position: absolute; 
+    height: 100%; 
+    min-width: 100%;
+    max-width: 100%; 
+    left:0;
+    object-fit: cover;  background-size: contain}
+.dropdown-toggle:defined{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.dropdown-toggle:hover{background-color: white!important; color: rgb(0, 32, 50)white!important;}
+.dropdown-toggle:focus{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.dropdown-toggle:active{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.btn-outline-primary{color: white(0, 32, 50)!important; border: none!important;}
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item.active{
+    background-color: white!important;
+    color: rgb(0, 32, 50)!important;}
+.menu img{margin-left: 4%;}
+label{color: white!important;}
+.navbar{background-color: rgb(255, 255, 255); box-shadow: 0px 1px 8px -2px #999999;}
+a.nav-link:hover{color: rgb(21, 43, 116)!important;}
+.mainForOrder{position: relative; z-index: 10; height: 100%; width: 100%; display: flex; flex-direction: row;}
+.forForma{height: 100%;width: 100%; display: flex; flex-direction: row; justify-content: end;}
+.carousel{width: 95%!important;}
+.carousel-item{height: max-content; display: flex; flex-direction: row; padding-left: 0%; height: 100%;}
+.carPic{width: 40%!important; display: flex; flex-direction: column; justify-content: end;}
+.forText1{width: 50%; padding-left: 3%; padding-top: 1%;padding-right: 4%;}
+.forPicandText{display: flex; flex-direction: row;}
+.name{font-weight: 400!important; font-size: 35px; color:white!important;}
+.price{font-weight: 400!important; font-size: 20px; color: white!important;}
+.slide{height: 100%; width: 100%!important; padding: 2%; padding-left: 0%; padding-right: 0%; display: flex; justify-self: flex-end;} 
+.forText1{width: 50%; padding-left: 3%; padding-top: 1%;padding-right: 4%;}
+.forRegistrationForm{width: 100%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;}
+h1{font-weight: 500!important;
+    font-family: Arial, Helvetica, sans-serif; 
+    color:white!important;
+    font-size: 35%;
+    text-align: center;
+}
+.formItself{display: flex; flex-direction: row; justify-content: center; height: 100%; width: 70%; height: max-content;}
+.formDiv{display: flex; flex-direction: row; width: 100%; height: max-content; margin-bottom: 4%;}
+#top{margin-top: 3%}
+.formDivName{background-color:  rgb(3,51,79); width: 45%; height: 100%; display: flex; color: white; padding-left: 5%; padding-top: 1%; padding-bottom: 1%;}
+.formDivForm{height: 100%;width: 55%!important; border: none;}
+.done{background-color: white; display:flex; flex-direction: column!important;align-items: center; justify-content: center;}
+.imgDone{width: 30%;}
+#last{margin-bottom: 20%;}
+fieldset{box-shadow: 0px 0px 9px -2px rgba(255, 255, 255, 0.568); padding-top: 5%!important; border-radius: 4px; padding-left: 3%!important; padding-right: 3%!important; font-size: 17px; background-color: rgba(255, 255, 255, 0.158); width: 80%; height: 100%; display: flex; flex-direction: column; align-items: center;}
+input, select{font-size: 17px;}
+select{margin-bottom: 10%; margin-top: 1%; padding-top: 2%; padding-bottom: 2%; text-align: center;}
+input.a{width: 100%; height: 100%; padding-left: 3%;}
+select {width: 100%; font-size: 17px;}
+.forButton{width: 100%; display: flex; flex-direction: row; justify-content: start; justify-content: start;}
+.OrderNow{
+    color:rgb(0, 32, 50)!important;
+    background: rgb(241,199,65)!important;
+    font-size: 150%!important;
+    font-weight: 500!important;
+    border-radius: 4px!important;
+    border: 3px solid transparent!important;
+    box-shadow: 0px 0px 17px -9px white!important;
+    width: 100%;
+    align-self: center;
+    height: fit-content;
+    border-color: none!important;
+}
+.OrderNow:hover{
+    box-shadow: 4px 0px 22px -5px rgb(241,199,65)!important;
+    background-color: rgb(241,199,65)!important;
+    color:rgb(3,51,79)!important;}
+.forOrderNow{margin-top: 0%!important; display: flex; flex-direction: row; justify-content: center;  margin-bottom: 6%;}
+a.aService{text-decoration: none!important;color:rgb(3,51,79)!important; font-size: 95%;
+}

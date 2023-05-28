@@ -1,0 +1,32 @@
+body{font-family: Arial, Helvetica, sans-serif!important;  background-color: rgb(0, 32, 50)!important; display: flex; flex-direction: column; height: max-content;}
+.navbar{background-color: rgb(255, 255, 255); box-shadow: 0px 1px 8px -2px #999999;}
+a.nav-link:hover{color: rgb(21, 43, 116)!important;}
+.container-fluid {
+    padding: 0%!important;
+}
+.dropdown-toggle:defined{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.dropdown-toggle:hover{background-color: white!important; color: rgb(0, 32, 50)white!important;}
+.dropdown-toggle:focus{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.dropdown-toggle:active{background-color: white!important; color: rgb(0, 32, 50)!important;}
+.btn-outline-primary{color: white(0, 32, 50)!important; border: none!important;}
+.dropdown-item:hover, .dropdown-item:active, .dropdown-item.active{
+    background-color: white!important;
+    color: rgb(0, 32, 50)!important;}
+.menu img{margin-left: 4%;}  
+.OptionMain{width: 100%; height: max-content; padding-left: 3%; padding-right: 3%; padding-top: 3%;background-color:rgb(0, 32, 50); display: flex;justify-content: center;}
+.carousel{width: 95%!important;}
+.carousel-item{height: max-content; background-color: rgb(0, 32, 50);}
+.carousel-item{display: flex; flex-direction: row; padding-left: 0%;}
+.carPic{width: 95%!important; height:70%; background-color:white; display: flex; flex-direction: column; justify-content: end; background-color: white;}
+.carPic img{max-height: 100%; width: auto;}
+.mainBlockForParts{display: flex; flex-direction: row; justify-content: space-evenly; height: max-content;}
+.forText1{width: 90%; padding-left: 3%; padding-top: 1%;padding-right: 4%; text-align: center;}
+.forPicandText{border-radius: 10px; display: flex; padding-bottom: 2%; padding-top: 2%; flex-direction: column; background-color: white; width:100%; justify-content: center; align-items: center;}
+.name{font-weight: 400!important; font-size: 35px; color: rgb(0, 32, 50)!important;}
+.price{font-weight: 400!important; font-size: 20px; color:  rgb(0, 32, 50)!important;}
+.forOrder{font-size: 140%; width: 100%!important; margin-bottom: 2%; background-color: rgb(0, 32, 50)!important; border-color:rgb(0, 32, 50)!important; font-family: Arial, Helvetica, sans-serif!important; }
+.top{margin-top: 4%;}
+.forPicandText.maint{justify-content: start!important; margin-bottom: 7%;}
+.forPicandText{margin-bottom: 7%;}
+.carPic.maint{justify-content: start;}
+.forOrder:hover{ box-shadow: 0px 0px 9px 0px rgb(0, 32, 50);}
